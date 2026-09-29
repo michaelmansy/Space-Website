@@ -103,12 +103,18 @@ section{
     font-size: 22px;
     margin-bottom: 5px;
     font-weight: 300;
+    animation: fadeInUp 0.5s ease-in-out ;
 }
 
 .section-inner h2 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
+    animation: fadeInUp 0.5s ease-in-out 0.2s;
+}
+
+.section-inner a{
+    animation: fadeInUp 0.5s ease-in-out 0.4s;
 }
 
 /* Background images */
@@ -153,3 +159,17 @@ section{
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+
+/* Animations */
+/* 0% is a start and 100% is the end */
+/* ba3d keda ne7ot el function el a7na samenaha fadeInUp fel 7eta el a7na 3awzenha which is  the inner content here*/
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(140px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
