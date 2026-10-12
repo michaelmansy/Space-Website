@@ -249,6 +249,23 @@ footer ul li a:hover{
 }
 
 
+/* Transition Hamburger to X when open */
+.open{
+    transform: rotate(90deg);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 /* Animations */
 /* 0% is a start and 100% is the end */
 /* ba3d keda ne7ot el function el a7na samenaha fadeInUp fel 7eta el a7na 3awzenha which is  the inner content here*/
